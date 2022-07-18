@@ -49,7 +49,7 @@ class Quote extends Component {
             }
           <div id="actionButtons">
             <div id="share-icons">
-                <a style={{backgroundColor:this.state.accentColor}} href={encodeURI(`twitter.com/intent/tweet?text=${this.state.quote} - ${this.state.author}`)} target="_blank" rel="noreferrer" id='tweet-quote'><i className='fa-brands fa-twitter'></i></a>
+                <a style={{backgroundColor:this.state.accentColor}} href={encodeURI(`http://www.twitter.com/intent/tweet?text=${this.state.quote} - ${this.state.author}`)} target="_blank" rel="noreferrer"  id='tweet-quote'><i className='fa-brands fa-twitter'></i></a>
                 <a style={{backgroundColor:this.state.accentColor}} href='tumblr.com' target="_blank" rel="noreferrer" id='tumblr-quote'><i className='fa-brands fa-tumblr'></i></a>
             </div>
             <button id='new-quote' onClick={this.generateNewQuote} style={{backgroundColor:this.state.accentColor}}>New quote</button>
